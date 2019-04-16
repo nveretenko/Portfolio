@@ -46,7 +46,7 @@ footer .logo {
 
 .content {
   color: $primary-color;
-  padding: 70px 0;
+  padding: 4rem 0;
   background-color: $bg-color;
 
   h2 {
@@ -80,7 +80,7 @@ footer .logo {
   left: 0;
 
   &_feature {
-    background: url("../images/Sky.jpg") no-repeat;
+    background: url("../../images/Sky.jpg") no-repeat;
     background-size: cover;
   }
 
@@ -126,8 +126,9 @@ footer .logo {
   transition: 0.7s;
 
   a {
-    color: $logo-color;
+    display: inline-block;
     padding: 2px 10px;
+    color: $logo-color;
     border: 1px solid;
   }
 
@@ -223,10 +224,6 @@ img[alt='en'] {
   margin-right: 0.5em;
 }
 
-.about .col-sm-6:nth-of-type(2) {
-  margin-bottom: 2rem;
-}
-
 .social {
   padding: 40px 0 25px;
 
@@ -234,6 +231,7 @@ img[alt='en'] {
     display: inline-block;
     width: 40px;
     height: 40px;
+    color: $primary-color;
     background-color: darken($logo-color, 30%);
 
     > svg {
@@ -241,10 +239,10 @@ img[alt='en'] {
       transform: translateY(-50%);
       width: 20px;
       height: 20px;
-      color: $primary-color;
     }
     
     &:hover {
+      color: $primary-color;
       background-color: $logo-color;
     }
   }
@@ -259,8 +257,16 @@ img[alt='en'] {
     padding-left: 0;
     margin-bottom: 0;
 
-    p:hover > span {
+    > li {
+      margin-bottom: 1rem;
+    }
+
+    a:hover span {
       background-color: $logo-color;
+    }
+
+    a {
+      color: $body-color;
     }
   }
 
@@ -269,6 +275,7 @@ img[alt='en'] {
     margin-right: 10px;
     width: 27px;
     height: 27px;
+    color: $primary-color;
     border-radius: 50%;
     background-color: darken($logo-color, 30%);
 
@@ -277,16 +284,11 @@ img[alt='en'] {
       transform: translateY(-50%);
       width: 18px;
       height: 18px;
-      color: $primary-color;
     }
   }
 }
 
 @media (min-width: 576px) {
-  .about .col-sm-6:nth-of-type(2) {
-    text-align: right;
-  }
-
   img[alt='en'] {
     margin-right: 0;
   }
