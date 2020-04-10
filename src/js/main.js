@@ -1,6 +1,10 @@
+//= ../../node_modules/jquery/dist/jquery.js
+//= ../../node_modules/aos/dist/aos.js
+
 
 //= partials/parallax.js
-//= partials/animate-css.js
 //= partials/popup.js
-//= partials/waypoints.min.js
-//= partials/app.js
+//= partials/init.js
+
+
+
