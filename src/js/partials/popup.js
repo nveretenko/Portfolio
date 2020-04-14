@@ -1,3 +1,4 @@
+/*
 
 $(document).ready(function() {
     var overlay = $('.overlay');
@@ -7,7 +8,8 @@ $(document).ready(function() {
 
     open_modal.click( function(event){
         event.preventDefault();
-        var div = $(this).attr('href');
+        $('.modal-window, .popup').css('display', 'block');
+        var div = $(this).attr('data-id');
         overlay.fadeIn(
             function(){
                 $(div)
@@ -25,4 +27,4 @@ $(document).ready(function() {
                 }
             );
     });
-});
+});*/

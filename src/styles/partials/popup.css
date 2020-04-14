@@ -1,5 +1,5 @@
 
-.popup {
+.modal-window .popup {
     position: fixed;
     display: none;
     top: 50%;

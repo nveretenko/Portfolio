@@ -5,6 +5,7 @@
 //= partials/parallax.js
 //= partials/popup.js
 //= partials/init.js
+//= partials/modal.js
 
 
 
