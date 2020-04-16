@@ -117,21 +117,14 @@ footer .logo {
     width: 100%;
     height: 100%;
 
-    &_grid {
-      transform: scale(-1, 1);
-    }
-
     &_feature {
       object-fit: contain;
     }
   }
 }
 
-@supports
-(background: url("../images/Sky.webp")){
-  .img-container_feature {
-    background: url("../images/Sky.webp");
-  }
+.content .col-md-6:nth-of-type(3) .row__item img[src*='mobile'] {
+  transform: scale(-1, 1);
 }
 
 .row__item {
@@ -139,8 +132,7 @@ footer .logo {
   justify-content: center;
   padding-bottom: 100%;
 
-  &:hover
-  .work {
+  &:hover .work {
     opacity: 1;
     padding-top: 10%;
     transition: 0.7s;

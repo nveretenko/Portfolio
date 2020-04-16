@@ -6,5 +6,8 @@
 //= partials/popup.js
 //= partials/init.js
 
+//= partials/base.js
+//= partials/plugins/modal.js
+//= partials/index.js
 
 
