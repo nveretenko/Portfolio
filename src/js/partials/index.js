@@ -1,25 +1,14 @@
 
 
 const items = [
-    {id: 0, img: 'images/gym-10.jpg', href: 'https://nveretenko.github.io/Portfolio/LoveFit', order: 'order-md-3 order-lg-0'},
-    {id: 1, img: 'images/top-banner_mobile.png', href: 'https://nveretenko.github.io/Portfolio/Talk_Bootstrap4_Gulp4/', overlay:'<div class="img-container-overlay"></div>'},
-    {id: 2, img: 'images/top-banner_mobile.png', href: 'https://nveretenko.github.io/Portfolio/Talk_Grid_Gulp4/', overlay:'<div class="img-container-overlay"></div>'},
-    {id: 3, img: 'images/Wedding.jpg', href: 'https://nveretenko.github.io/Portfolio/wedding(bootstrap3)/'},
-    {id: 4, img: 'images/Earth.png', href: 'https://nveretenko.github.io/Portfolio/Earth-Moon+Plane/', classImgContainer: 'img-container_feature', classImgContainerItem: 'img-container__item_feature'},
-    {id: 5, img: 'images/night-work1.jpg', href: 'https://nveretenko.github.io/Portfolio/Certificate.gif'},
-    {id: 6, img: 'images/night-work4.jpg', href: 'javascript:void(0);', order:'order-8'},
-    {id: 7, img: 'images/Cat.jpg', href: 'https://nveretenko.github.io/Portfolio/Blog(adaptive)/'}
-];
-
-const popups = [
-    {title: 'LoveFit', content: '<p>Bootstrap4, Gulp4, Carousel, svg-sprite...</p>'},
-    {title: 'Talk_Bootstrap4_Gulp4', 'content': '<p>Bootstrap4, Gulp4, BEM, svg-sprite...</p>'},
-    {title: 'Talk_Grid_Gulp4', 'content': '<p>Grid, Gulp4, BEM, svg-sprite...</p>'},
-    {title: 'Wedding(<span>test</span>)', 'content': '<p>bootstrap3</p>'},
-    {title: 'Earth-Moon(<span>test</span>)', 'content': '<p>Bootstrap4, Gulp4, Carousel, svg-sprite...</p>'},
-    {title: 'Certificate', 'content': '<p>Certificate</p>'},
-    {title: '<span>test</span>', 'content': '<p>development is not finished</p>'},
-    {title: 'Blog(<span>test</span>)', 'content': '<p>flex, css grid, bem, responsive</p>'}
+    {id: 1,title: 'LoveFit',content: '<p>Bootstrap4, Gulp4, Carousel, svg-sprite...</p>', img: 'images/gym-10.jpg', href: 'https://nveretenko.github.io/Portfolio/LoveFit', order: 'order-md-3 order-lg-0'},
+    {id: 2,title: 'Talk_Bootstrap4_Gulp4', 'content': '<p>Bootstrap4, Gulp4, BEM, svg-sprite...</p>', img: 'images/top-banner_mobile.png', href: 'https://nveretenko.github.io/Portfolio/Talk_Bootstrap4_Gulp4/', overlay:'<div class="img-container-overlay"></div>'},
+    {id: 3,title: 'Talk_Grid_Gulp4', 'content': '<p>Grid, Gulp4, BEM, svg-sprite...</p>', img: 'images/top-banner_mobile.png', href: 'https://nveretenko.github.io/Portfolio/Talk_Grid_Gulp4/', overlay:'<div class="img-container-overlay"></div>'},
+    {id: 4,title: 'СММ<span>щик</span>', 'content': '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>', img: 'images/mentor-1.jpg', href: 'https://nveretenko.github.io/Portfolio/Smm'},
+    {id: 5,title: 'Earth-Moon(<span>test</span>)', 'content': '<p>simple animation</p>', img: 'images/Earth.png', href: 'https://nveretenko.github.io/Portfolio/Earth-Moon+Plane/', classImgContainer: 'img-container_feature', classImgContainerItem: 'img-container__item_feature'},
+    {id: 6,title: 'Certificate', 'content': '<p>Certificate</p>', img: 'images/night-work1.jpg', href: 'https://nveretenko.github.io/Portfolio/Certificate.gif'},
+    {id: 7,title: '<span>test</span>', 'content': '<p>development is not finished</p>', img: 'images/night-work4.jpg', href: 'javascript:void(0);', order:'order-8'},
+    {id: 8,title: 'Wedding(<span>test</span>)', 'content': '<p>bootstrap3</p>', img: 'images/Wedding.jpg', href: 'https://nveretenko.github.io/Portfolio/wedding(bootstrap3)/'},
 ];
 
 const toHTML = item => `
@@ -41,18 +30,28 @@ const toHTML = item => `
 
 function render() {
     const html = items.map(toHTML).join('');
-        document.querySelector('#items').innerHTML = html;
-};
-
+    document.querySelector('#items').innerHTML = html;
+}
 render();
 
+const modal = $.modal({
+    width: '400px'
+});
+
 document.addEventListener('click', event => {
-    const id = event.target.dataset.id;
-    const modal = $.modal(popups[id]);
-    event.preventDefault();
+
+    const id = +event.target.dataset.id;
     const description = event.target.dataset.description;
 
     if (description === 'description') {
+        event.preventDefault();
+        const item = items.find(item => item.id === id);
+
+        modal.setContent(`
+            <span class="modal-close" data-close="true">&times;</span>
+            <h3 class="modal-title text-center">${item.title}</h3>
+            ${item.content}
+        `);
         modal.open();
     }
 });

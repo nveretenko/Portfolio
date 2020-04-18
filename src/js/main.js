@@ -2,12 +2,13 @@
 //= ../../node_modules/aos/dist/aos.js
 
 
-//= partials/parallax.js
-//= partials/popup.js
-//= partials/init.js
+(function () {
+    //= partials/parallax.js
+    //= partials/popup.js
+    //= partials/init.js
 
-//= partials/base.js
-//= partials/plugins/modal.js
-//= partials/index.js
+    //= partials/base.js
+    //= partials/plugins/modal.js
+    //= partials/index.js
 
-
+})();
