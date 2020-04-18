@@ -3,5 +3,5 @@ node_modules/
 *.map
 *.json
 gulpfile.js
-build/
+build
 *.xml
