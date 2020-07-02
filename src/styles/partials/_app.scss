@@ -138,6 +138,7 @@ footer .logo {
     transition: 0.7s;
   }
 
+
   &:hover .img-container__item_feature {
     animation: earth 90s linear infinite;
   }
@@ -163,6 +164,13 @@ footer .logo {
     padding: 2px 10px;
     color: $logo-color;
     border: 1px solid;
+  }
+  button {
+    display: inline-block;
+    padding: 2px 10px;
+    color: $logo-color;
+    border: 1px solid;
+    background: transparent;
   }
 
   &-title {
