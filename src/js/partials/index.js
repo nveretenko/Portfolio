@@ -1,7 +1,7 @@
 
 
 const items = [
-    {id: 2,title: 'Violis-Hotel', 'content': '<p>Angular-10, PWA, backend:частично</p>', img: 'images/Angular.png', href: 'http://violis-test.zzz.com.ua/', target:'_blank', overlay:'<div class="img-container-overlay"></div>'},
+    {id: 2,title: 'Violis-Hotel', 'content': '<p>Angular-10, PWA, backend:частично</p>', img: 'images/Angular.png', href: 'https://violis-test.zzz.com.ua/', target:'_blank', overlay:'<div class="img-container-overlay"></div>'},
     {id: 1,title: 'LoveFit',content: '<p>Bootstrap4, Gulp4, Carousel, svg-sprite...</p>', img: 'images/gym-10.jpg', href: 'https://nveretenko.github.io/Portfolio/LoveFit', target:'_blank', order: 'order-md-3 order-lg-0'},
     {id: 3,title: 'Talk_Grid_Gulp4', 'content': '<p>Grid, Gulp4, BEM, svg-sprite...</p>', img: 'images/top-banner_mobile.png', href: 'https://nveretenko.github.io/Portfolio/Talk_Grid_Gulp4/', target:'_blank', overlay:'<div class="img-container-overlay"></div>'},
     {id: 4,title: 'СММ<span>щик</span>', 'content': '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>', img: 'images/mentor-1.jpg', href: 'https://nveretenko.github.io/Portfolio/SMM', target:'_blank'},
