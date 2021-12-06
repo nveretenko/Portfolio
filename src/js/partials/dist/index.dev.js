@@ -3,7 +3,7 @@
 var items = [{
   id: 2,
   title: 'Violis-Hotel',
-  'content': '<p>Angular-10, PWA, backend:частично</p>',
+  content: '<p>Angular-10, PWA, backend:частично</p>',
   img: 'images/Angular.png',
   href: 'https://violis-test.zzz.com.ua/',
   target: '_blank',
@@ -19,7 +19,7 @@ var items = [{
 }, {
   id: 3,
   title: 'Talk_Grid_Gulp4',
-  'content': '<p>Grid, Gulp4, BEM, svg-sprite...</p>',
+  content: '<p>Grid, Gulp4, BEM, svg-sprite...</p>',
   img: 'images/top-banner_mobile.png',
   href: 'https://nveretenko.github.io/Portfolio/Talk_Grid_Gulp4/',
   target: '_blank',
@@ -27,14 +27,14 @@ var items = [{
 }, {
   id: 4,
   title: 'СММ<span>щик</span>',
-  'content': '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>',
+  content: '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>',
   img: 'images/mentor-1.jpg',
   href: 'https://nveretenko.github.io/Portfolio/SMM',
   target: '_blank'
 }, {
   id: 5,
   title: 'Earth-Moon(<span>test</span>)',
-  'content': '<p>simple animation</p>',
+  content: '<p>simple animation</p>',
   img: 'images/Earth.png',
   href: 'https://nveretenko.github.io/Portfolio/Earth-Moon+Plane/',
   target: '_blank',
@@ -42,25 +42,24 @@ var items = [{
   classImgContainerItem: 'img-container__item_feature'
 }, {
   id: 6,
-  title: 'Certificate',
-  'content': '<p>Certificate</p>',
-  img: 'images/night-work1.jpg',
-  href: 'https://nveretenko.github.io/Portfolio/Certificate.gif',
+  title: 'SteelTime',
+  content: '<p>Bootstrap5, Flex, Gulp4, adaptive, svg-sprite...</p>',
+  img: 'images/steeltime.jpg',
+  href: 'https://webset.zzz.com.ua/steeltime/ru/',
   target: '_blank'
 }, {
   id: 7,
   title: '<span>test</span>',
-  'content': '<p>development is not finished</p>',
+  content: '<p>development is not finished</p>',
   img: 'images/night-work4.jpg',
   href: 'javascript:void(0);',
   order: 'order-8'
 }, {
   id: 8,
-  title: 'Wedding(<span>test</span>)',
-  'content': '<p>bootstrap3</p>',
-  img: 'images/Wedding.jpg',
-  href: 'https://nveretenko.github.io/Portfolio/wedding(bootstrap3)/',
-  target: '_blank'
+  title: '<span>test</span>',
+  content: '<p>development is not finished</p>',
+  img: 'images/night-work1.jpg',
+  href: 'javascript:void(0);'
 }];
 
 var toHTML = function toHTML(item) {
