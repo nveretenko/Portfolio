@@ -2,6 +2,16 @@
 
 const items = [
   {
+    id: 8,
+    title: 'Blog',
+    content: '<p>Angular-12, PWA, Firebase</p>',
+    img: 'images/Angular.png',
+    href: 'https://angular-blog-75c7e.web.app/',
+    target: '_blank',
+    overlay: '<div class="img-container-overlay"></div>'
+  },
+
+  {
     id: 7,
     title: 'myOrganizer',
     content: '<p>Angular-12</p>',
@@ -10,6 +20,7 @@ const items = [
     target: '_blank',
     overlay: '<div class="img-container-overlay"></div>'
   },
+
   {
     id: 2,
     title: 'Violis-Hotel',
@@ -19,33 +30,16 @@ const items = [
     target: '_blank',
     overlay: '<div class="img-container-overlay"></div>',
   },
-  {
-    id: 3,
-    title: 'Talk_Grid_Gulp4',
-    content: '<p>Grid, Gulp4, BEM, svg-sprite...</p>',
-    img: 'images/top-banner_mobile.png',
-    href: 'https://nveretenko.github.io/Portfolio/Talk_Grid_Gulp4/',
-    target: '_blank',
-    overlay: '<div class="img-container-overlay"></div>',
-  },
+
   {
     id: 4,
     title: 'СММ<span>щик</span>',
     content: '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>',
     img: 'images/mentor-1.jpg',
-    href: 'https://nveretenko.github.io/Portfolio/SMM',
+    href: 'https://nveretenko.github.io/SMM/build/',
     target: '_blank',
   },
-  {
-    id: 5,
-    title: 'Earth-Moon(<span>test</span>)',
-    content: '<p>simple animation</p>',
-    img: 'images/Earth.png',
-    href: 'https://nveretenko.github.io/Portfolio/Earth-Moon+Plane/',
-    target: '_blank',
-    classImgContainer: 'img-container_feature',
-    classImgContainerItem: 'img-container__item_feature',
-  },
+
   {
     id: 6,
     title: 'SteelTime',
@@ -54,22 +48,35 @@ const items = [
     href: 'https://webset.zzz.com.ua/steeltime/ru/',
     target: '_blank',
   },
+
   {
     id: 1,
     title: 'LoveFit',
     content: '<p>Bootstrap4, Gulp4, Carousel, svg-sprite...</p>',
     img: 'images/gym-10.jpg',
-    href: 'https://nveretenko.github.io/Portfolio/LoveFit',
+    href: 'https://nveretenko.github.io/LoveFit/build/',
     target: '_blank',
     order: 'order-md-3 order-lg-0',
   },
+
   {
-    id: 8,
-    title: '<span>test</span>',
-    content: '<p>development is not finished</p>',
-    img: 'images/night-work1.jpg',
-    href: 'javascript:void(0);'
+    id: 5,
+    title: 'Earth-Moon(<span>test</span>)',
+    content: '<p>simple animation</p>',
+    img: 'images/Earth.png',
+    href: 'https://nveretenko.github.io/Earth-Moon-Plane/',
+    target: '_blank',
+    classImgContainer: 'img-container_feature',
+    classImgContainerItem: 'img-container__item_feature',
   },
+  
+  {
+    id: 3,
+    title: 'Test',
+    content: '<p>test...</p>',
+    img: 'images/night-work4.jpg',
+    href: '#'
+  }
 ]
 
 const toHTML = item => `
