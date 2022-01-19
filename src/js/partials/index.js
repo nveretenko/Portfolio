@@ -22,6 +22,16 @@ const items = [
   },
 
   {
+    id: 3,
+    title: 'OnlineShop',
+    content: '<p>Angular-12, PWA, Firebase</p>',
+    img: 'images/Angular.png',
+    href: 'https://online-shop-54a83.web.app/',
+    target: '_blank',
+    overlay: '<div class="img-container-overlay"></div>'
+  },
+  
+  {
     id: 2,
     title: 'Violis-Hotel',
     content: '<p>Angular-10, PWA, backend:частично</p>',
@@ -29,15 +39,6 @@ const items = [
     href: 'https://violis-test.zzz.com.ua/',
     target: '_blank',
     overlay: '<div class="img-container-overlay"></div>',
-  },
-
-  {
-    id: 4,
-    title: 'СММ<span>щик</span>',
-    content: '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>',
-    img: 'images/mentor-1.jpg',
-    href: 'https://nveretenko.github.io/SMM/build/',
-    target: '_blank',
   },
 
   {
@@ -71,12 +72,13 @@ const items = [
   },
   
   {
-    id: 3,
-    title: 'Test',
-    content: '<p>test...</p>',
-    img: 'images/night-work4.jpg',
-    href: '#'
-  }
+    id: 4,
+    title: 'СММ<span>щик</span>',
+    content: '<p>Flex, Grid, Gulp4, Animation, adaptive, svg-sprite...</p>',
+    img: 'images/mentor-1.jpg',
+    href: 'https://nveretenko.github.io/SMM/build/',
+    target: '_blank',
+  },
 ]
 
 const toHTML = item => `
