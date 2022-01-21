@@ -65,7 +65,7 @@ const items = [
     title: 'Earth-Moon(<span>test</span>)',
     content: '<p>simple animation</p>',
     img: 'images/Earth.png',
-    href: 'https://nveretenko.github.io/Earth-Moon-Plane/',
+    href: 'https://animation-86a92.web.app/',
     target: '_blank',
     classImgContainer: 'img-container_feature',
     classImgContainerItem: 'img-container__item_feature',
