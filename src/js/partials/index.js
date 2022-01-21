@@ -16,7 +16,7 @@ const items = [
     title: 'myOrganizer',
     content: '<p>Angular-12</p>',
     img: 'images/Angular.png',
-    href: 'https://webset.zzz.com.ua/myOrganizer/',
+    href: 'https://myorganizer-b685d.web.app/',
     target: '_blank',
     overlay: '<div class="img-container-overlay"></div>'
   },
